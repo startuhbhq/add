@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "as-wasi": "^0.6.0",
+    "assemblyscript": "^0.28.4"
+  },
+  "dependencies": {
+    "wasi": "^0.0.5"
+  },
+  "scripts": {
+    "start": "wasmtime run --invoke add build/hello.wasm",
+    "build": "npx asc assembly/index.ts --config asconfig.json --target release -o build/hello.wasm"
+  }
+}
