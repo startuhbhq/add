@@ -1,5 +1,29 @@
 {
   "name": "add",
   "version": "0.0.1",
-  "dependencies": {}
+  "entry": "build/add.wasm",
+  "abi": "starthub.v1",
+  "encoding": "json",
+  "permissions": [],
+  "inputs": [
+    {
+      "name": "a",
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    {
+      "name": "b",
+      "type": "number",
+      "required": true,
+      "default": 2
+    }
+  ],
+  "outputs": [
+    {
+      "name": "some result",
+      "type": "number"
+    }
+  ],
+  "wirings": []
 }
