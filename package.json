@@ -7,7 +7,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "wasmtime run --invoke add build/add.wasm",
+    "start": "node index.js",
     "build": "npx asc assembly/index.ts --config asconfig.json --target release -o build/add.wasm --bindings esm"
   }
 }
