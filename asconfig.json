@@ -1,13 +1,8 @@
 {
-  "targets": {
-    "release": {
-      "optimizeLevel": 3,
-      "shrinkLevel": 1,
-      "converge": true,
-      "noAssert": true
-    }
-  },
+  "targets": { "release": { "optimizeLevel": 3, "shrinkLevel": 1 } },
   "options": {
-    "runtime": "stub"
+    "noAssert": true,
+    "bindings": "esm",
+    "transform": ["json-as/transform"]
   }
 }
