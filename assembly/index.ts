@@ -1,6 +1,6 @@
 import { JSON } from "json-as/assembly";
 
-@external("env", "log") declare function hostLog(msg: string): void;
+// @external("env", "log") declare function hostLog(msg: string): void;
 
 @json
 class Input { a!: i32; b!: i32; }

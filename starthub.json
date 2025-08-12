@@ -21,7 +21,7 @@
   ],
   "outputs": [
     {
-      "name": "some result",
+      "name": "result",
       "type": "number"
     }
   ],
