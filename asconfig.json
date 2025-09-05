@@ -3,6 +3,8 @@
   "options": {
     "noAssert": true,
     "bindings": "esm",
-    "transform": ["json-as/transform"]
+    "transform": ["json-as/transform"],
+    "memoryBase": 1024,
+    "tableBase": 0
   }
 }

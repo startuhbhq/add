@@ -1,7 +1,7 @@
 {
-  "name": "add",
+  "name": "from-object",
   "version": "0.0.1",
-  "entry": "build/add.wasm",
+  "entry": "build/from-object.wasm",
   "abi": "starthub.v1",
   "encoding": "json",
   "permissions": [],
