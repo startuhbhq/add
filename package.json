@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "build": "npx asc assembly/index.ts --config asconfig.json --target release -o build/from-object.wasm --bindings esm"
+    "build": "npx asc assembly/index.ts --config asconfig.json --target release -o build/from-object.wasm --bindings esm",
+    "test": "node test.js"
   }
 }

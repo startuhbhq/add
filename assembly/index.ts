@@ -12,8 +12,8 @@ class Field {
 // Flattened structure to work around AssemblyScript json-as limitations with nested objects
 @json
 class ObjectData {
-  prop1!: i32;
-  prop2_key1!: i32;
+  prop1!: f64;
+  prop2_key1!: f64;
   prop2_name!: string;
 }
 
@@ -111,8 +111,8 @@ export function run(input: string): string {
       const num = parseInt(rawValue);
       resultsJson += `{"key":"${field.key}","value":${num}}`;
     } else if (field.type == "number") {
-      const num = parseFloat(rawValue);
-      resultsJson += `{"key":"${field.key}","value":${num}}`;
+      // For numbers, use the raw value directly since it's already a string representation
+      resultsJson += `{"key":"${field.key}","value":${rawValue}}`;
     } else {
       // String type
       resultsJson += `{"key":"${field.key}","value":"${rawValue}"}`;
